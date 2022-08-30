@@ -6,7 +6,7 @@ function setup(){
 }
 
 function draw(){
-    background(51);
+    background(251);
     movingFurry(0.035, 20, 150);
 }
 
