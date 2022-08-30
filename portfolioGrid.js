@@ -19,7 +19,7 @@ function movingFurry(inc, scl, pad){
     cols = int(width/this.s);
     rows = int(height/this.s);
 
-    rotate(-0.2);
+    rotate(-0.1);
     translate(-this.p/2.7, this.p/1.8);
     var yoff = 0;
     var fun = map(mouseX, 0, width, 0, 3);
