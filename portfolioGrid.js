@@ -6,7 +6,7 @@ function setup(){
 }
 
 function draw(){
-    background(251);
+    background(51);
     movingFurry(0.035, 20, 150);
 }
 
@@ -20,7 +20,7 @@ function movingFurry(inc, scl, pad){
     rows = int(height/this.s);
 
     rotate(-0.1);
-    translate(-this.p/2.7, this.p/1.9);
+    translate(-this.p/5.7, this.p/2.5);
     var yoff = 0;
     var fun = map(mouseX, 0, width, 0, 3);
     noiseDetail(14, 0.6);
