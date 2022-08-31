@@ -56,3 +56,9 @@ function movingFurry(inc, scl, pad, fun){
         yoff +=this.i;
     }
 }
+
+function windowResized() {
+    w = min(windowWidth, windowHeight);
+    resizeeCanvas(w,w);
+    
+}
