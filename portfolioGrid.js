@@ -59,6 +59,6 @@ function movingFurry(inc, scl, pad, fun){
 
 function windowResized() {
     w = min(windowWidth, windowHeight);
-    resizeeCanvas(w,w);
+    resizeCanvas(w,w);
     
 }
