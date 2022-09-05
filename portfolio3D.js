@@ -7,6 +7,7 @@
 function setup(){
     w = min(windowWidth, windowHeight);
     createCanvas(w, w, WEBGL);
+    console.log(w);
 }
 
 function draw(){
@@ -27,25 +28,25 @@ function draw(){
     rotateX(millis() / 1380);
     rotateY(millis() / 1180);
     translate(89, 100, 50);
-    sphere(40, 60);
+    sphere(w/20, 60);
     rotateX(millis() / 2000);
     rotateY(millis() / 2800);
     translate(130, 120);
-    sphere(80, 70, 120);
+    sphere(w/12, 70, 120);
     translate(140, 20, 120);
-    sphere(20, 90, 20);
+    sphere(w/50, 90, 20);
     pop();
 
     rotateZ(millis() / 2200);
     rotateX(millis() / 1850);
 
     fill(34, 76, 53, 150);
-    box(100, 100);
+    box(w/10, w/10);
     fill(104, 165, 130, 80);
-    plane(240, 240, 2);
-    rect(200, 200, 200);
-    rect(-200,  200, 200);
-    rect(-200,  - 400, 200);
+    plane(w/4, w/4, 2);
+    rect(w/5, w/5, w/5);
+    rect(-w/5, w/5, w/5);
+    rect(-w/5, (-w/5) *2, w/5);
 }
 
 function windowResized() {
