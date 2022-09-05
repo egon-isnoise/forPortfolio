@@ -39,7 +39,7 @@ function draw(){
     rotateZ(millis() / 2200);
     rotateX(millis() / 1850);
 
-    fill(34, 76, 53, 200);
+    fill(34, 76, 53, 150);
     box(100, 100);
     fill(104, 165, 130, 80);
     plane(240, 240, 2);
