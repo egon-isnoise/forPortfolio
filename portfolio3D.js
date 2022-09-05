@@ -1,4 +1,9 @@
 
+// a few colors
+// rgb(34, 76, 53);
+// rgb(104, 165, 130);
+// rgb(152, 175, 153);
+
 function setup(){
     w = min(windowWidth, windowHeight);
     createCanvas(w, w, WEBGL);
@@ -8,8 +13,8 @@ function draw(){
     background(249, 247, 240);
     
     // set lights
-    pointLight(0, 205,255, 0, -200, 0);
-    pointLight(255, 250, 0, 0, 1200, 0);
+    pointLight(225, 225, 255, 0, -200, 0);
+    pointLight(255, 250, 225, 0, 1200, 0);
 
     moverX = map(mouseX, 0, windowWidth, w/6, w-w/6);
     moverY = map(mouseY, 0, windowHeight, w/6, w-w/6);
@@ -18,6 +23,7 @@ function draw(){
 
     // 3D mover
     push();
+    fill(34, 76, 53, 200);
     rotateX(millis() / 1380);
     rotateY(millis() / 1180);
     translate(89, 100, 50);
@@ -33,9 +39,9 @@ function draw(){
     rotateZ(millis() / 2200);
     rotateX(millis() / 1850);
 
-    fill(0, 0, 0, 80);
+    fill(34, 76, 53, 200);
     box(100, 100);
-    fill(60, 120, 180, 40);
+    fill(104, 165, 130, 80);
     plane(240, 240, 2);
     rect(200, 200, 200);
     rect(-200,  200, 200);
