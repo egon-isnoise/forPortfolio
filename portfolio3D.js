@@ -5,14 +5,16 @@ function setup(){
 }
 
 function draw(){
-    background(251);
+    background(249, 247, 240);
     
     // set lights
     pointLight(0, 205,255, 0, -200, 0);
     pointLight(255, 250, 0, 0, 1200, 0);
-    
 
-    translate(mouseX - width/2, mouseY - height/2);
+    moverX = map(mouseX, 0, windowWidth, w/6, w-w/6);
+    moverY = map(mouseY, 0, windowHeight, w/6, w-w/6);
+
+    translate(moverX - w/2, moverY - w/2);
 
     // 3D mover
     push();
