@@ -10,6 +10,7 @@ function draw(){
     // set lights
     pointLight(0, 205,255, 0, -200, 0);
     pointLight(255, 250, 0, 0, 1200, 0);
+    
 
     translate(mouseX - width/2, mouseY - height/2);
 
@@ -37,4 +38,9 @@ function draw(){
     rect(200, 200, 200);
     rect(-200,  200, 200);
     rect(-200,  - 400, 200);
+}
+
+function windowResized() {
+    w = min(windowWidth, windowHeight);
+    resizeCanvas(w,w);
 }
