@@ -5,7 +5,7 @@ function setup(){
 }
 
 function draw(){
-    background(175);
+    background(251);
     
     // set lights
     pointLight(0, 205,255, 0, -200, 0);
