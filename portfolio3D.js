@@ -17,23 +17,25 @@ function draw(){
     pointLight(225, 225, 255, 0, -200, 0);
     pointLight(255, 250, 225, 0, 1200, 0);
 
-    moverX = map(mouseX, 0, windowWidth, w/4, w-w/4);
-    moverY = map(mouseY, 0, windowHeight, w/4, w-w/4);
+    if(mouseIsPressed){
+        moverX = map(mouseX, 0, windowWidth, w/4, w-w/4);
+        moverY = map(mouseY, 0, windowHeight, w/4, w-w/4);
 
-    translate(moverX - w/2, moverY - w/2);
-
+        translate(moverX - w/2, moverY - w/2);
+    }
+    
     // 3D mover
     push();
     fill(34, 76, 53, 200);
     rotateX(millis() / 1380);
     rotateY(millis() / 1180);
-    translate(105, 120, 50);
+    translate(w/9, w/8, w/20);
     sphere(w/17, 60);
     rotateX(millis() / 2000);
     rotateY(millis() / 2800);
-    translate(140, 130);
+    translate(w/8, w/10);
     sphere(w/11, 70, 120);
-    translate(140, 20, 120);
+    translate(w/12, w/40, w/8);
     sphere(w/45, 90, 20);
     pop();
 
